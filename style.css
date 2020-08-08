@@ -49,6 +49,72 @@ body {
   background-image: url("Resources/img/icon-phone-header.svg");
 }
 
+nav {
+  font-family: monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.menu{
+  padding-right: 10px;
+}
+
+li {
+  color: #fff;
+  display: block;
+  float: right;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0.3rem;
+  right: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.navigation-menu{
+  width: 35px;
+  height: 35px;
+}
+
+.hamburger{
+  width: 35px;
+  height: 35px;
+}
+
 .greeting {
   padding-top: 260px;
   margin-bottom: 620px;
