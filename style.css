@@ -6,8 +6,7 @@ body {
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("../Resources/img/books.jpg");
-  background-repeat: no-repeat;
+  background-image: url("Resources/img/yellow-wall.jpg");
   background-position: top center;
 }
 
@@ -40,12 +39,12 @@ body {
 
 .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url("Resources/img/icon-email-header.svg");
 }
 
 .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("Resources/img/icon-phone-header.svg");
 }
 
 .greeting {
@@ -121,10 +120,10 @@ body {
 
 .footer-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
+  background-image: url("Resources/img/icon-email-footer.svg");
 }
 
 .footer-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+  background-image: url("Resources/img/icon-phone-footer.svg");
 }
