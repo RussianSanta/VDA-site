@@ -23,6 +23,7 @@ header {
   color: #ffffff;
   padding: 10px 0 10px;
   position: fixed;
+  z-index: 100;
 }
 
 header, footer{
@@ -53,11 +54,11 @@ header a {
   background-image: url("Resources/img/icon-phone-header.svg");
 }
 
-nav {
+.navigation {
   font-family: monospace;
 }
 
-ul {
+.menu, .dropdown {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -68,13 +69,14 @@ ul {
   padding-right: 10px;
 }
 
-li {
+.navigation-menu, .choose {
   color: #fff;
   display: block;
   float: right;
   padding: 1rem;
   position: relative;
   text-decoration: none;
+  text-align: left;
 }
 
 .choose {
@@ -82,48 +84,48 @@ li {
   border-radius: 5px;
 }
 
-li a {
+.navigation-menu a, .choose a {
   color: #fff;
 }
 
-li:hover {
+.navigation-menu:hover, .choose:hover {
   cursor: pointer;
 }
 
-ul li ul {
+.menu .navigation-menu .dropdown {
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
   padding: 10px;
-  top: 2.4rem;
+  top: 2.3rem;
   margin-top: 0.5rem;
   right: 0;
   display: none;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+.menu .navigation-menu:hover > ul,
+.menu .navigation-menu .dropdown:hover {
   visibility: visible;
   background: burlywood;
   opacity: 1;
   display: block;
 }
 
-ul li ul li {
+.menu .navigation-menu .dropdown .choose {
   clear: both;
-  width: 100%;
+  width: 120%;
 }
 
-ul li ul li:hover {
+.menu .navigation-menu .dropdown .choose:hover {
   background: saddlebrown;
   font-size: 18px;
 }
 
 .navigation-menu{
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   padding: 5px;
 }
 
